@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+}
+
+.wrap {
+  width: 1000px;
+  height: 100px;
+  margin: 50px auto;
+}
+.wrap h1 {
+  font-weight: 300;
+  text-align: center;
+}
+.wrap .photos {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #fafafa;
+}
+.wrap .photos .photo {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: calc(100%/5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.wrap .photos .photo:nth-child(1) {
+  background-image: url(https://store.storeimages.cdn-apple.com/4980/as-images.apple.com/is/image/AppleInc/aos/published/images/e/ar/earpods/iphone/earpods-iphone-box-201609);
+}
+.wrap .photos .photo:nth-child(2) {
+  background-image: url(https://store.storeimages.cdn-apple.com/4980/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7/jetblack/iphone7-jetblack-box-201609);
+}
+.wrap .photos .photo:nth-child(3) {
+  background-image: url(https://store.storeimages.cdn-apple.com/4980/as-images.apple.com/is/image/AppleInc/aos/published/images/l/ig/lightning/to/lightning-to-usb-iphone-box-201609);
+}
+.wrap .photos .photo:nth-child(4) {
+  background-image: url(https://store.storeimages.cdn-apple.com/4980/as-images.apple.com/is/image/AppleInc/aos/published/images/p/ow/power/adapter/power-adapter-iphone-box-201609);
+}
+.wrap .photos .photo:nth-child(5) {
+  background-image: url(https://store.storeimages.cdn-apple.com/4980/as-images.apple.com/is/image/AppleInc/aos/published/images/h/ea/headphone/adapter/headphone-adapter-iphone-box-201609);
+}
+.wrap .desc {
+  width: 100%;
+  float: left;
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.wrap .desc .item {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: calc(100%/5);
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+}
+.wrap .action {
+  width: 100%;
+  float: left;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.wrap .action .buy {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: calc(100%/5);
+  text-align: center;
+}
+.wrap .action .buy a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.021em;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #07c;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 30px;
+  padding: 3px 15px 4px;
+}
+.wrap .action .buy.disable a {
+  cursor: not-allowed;
+  background: #e5e5e5;
+  border: 1px solid #ddd;
+}
+.wrap .action .buy span {
+  margin: 7px 0 0 5px;
+  line-height: 2;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+  color: #c3c2c2;
+}
+
+.refresh{
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 30px 0 #dedede;
+  border-radius: 100%;
+}
