@@ -22,7 +22,7 @@ app.get('/', function(req, res){
 // On connection
 io.on('connection', function(socket){
   users++;
-  console.log('Online: '+users+ ' (+1)');
+  io.emit('users', users);
 
   io.emit('stock', stock);
 
@@ -45,8 +45,8 @@ io.on('connection', function(socket){
   })
 
   socket.on('disconnect', function(){
-    users--;
-    console.log('Online: '+users+ ' (-1)');
+    users--;    
+    io.emit('users', users);
   });
 });
 

@@ -42,4 +42,9 @@ $(function () {
     stock = data;
     refresh();
   });
+
+  // Users online
+  socket.on('users', function(users){
+    $(".online").html(users+' online');
+  });
 });
